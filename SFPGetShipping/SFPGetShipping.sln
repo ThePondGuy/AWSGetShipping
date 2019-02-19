@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFPShipping", "SFPShipping\SFPShipping.csproj", "{406767A4-DE9F-4FF8-8D22-DFD253122735}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFPGetShipping", "SFPGetShipping\SFPGetShipping.csproj", "{1416F314-5161-4CBE-A2B6-27A860A1645C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{406767A4-DE9F-4FF8-8D22-DFD253122735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{406767A4-DE9F-4FF8-8D22-DFD253122735}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{406767A4-DE9F-4FF8-8D22-DFD253122735}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{406767A4-DE9F-4FF8-8D22-DFD253122735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1416F314-5161-4CBE-A2B6-27A860A1645C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1416F314-5161-4CBE-A2B6-27A860A1645C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1416F314-5161-4CBE-A2B6-27A860A1645C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1416F314-5161-4CBE-A2B6-27A860A1645C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C806016B-B5F6-4274-8368-5D2FD94A492A}
+		SolutionGuid = {15A442EF-3478-43CC-A06A-AA9B67B585B4}
 	EndGlobalSection
 EndGlobal
