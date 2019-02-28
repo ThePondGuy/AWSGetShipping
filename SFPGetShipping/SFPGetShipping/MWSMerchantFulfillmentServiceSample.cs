@@ -34,20 +34,20 @@ namespace MWSMerchantFulfillmentService {
             // TODO: Set the below configuration variables before attempting to run
 
             // Developer AWS access key
-            string accessKey = "replaceWithAccessKey";
+            string accessKey = "AKIAI47CD3CCSP47FD6Q";
 
             // Developer AWS secret key
-            string secretKey = "replaceWithSecretKey";
+            string secretKey = "roSd6MVupol6LmjG2cKXRyJ0PbhfwijbEFmn4s/2";
 
             // The client application name
-            string appName = "CSharpSampleCode";
+            string appName = "SFPShippingLabelGenerator";
 
             // The client application version
             string appVersion = "1.0";
 
             // The endpoint for region service and version (see developer guide)
             // ex: https://mws.amazonservices.com
-            string serviceURL = "replaceWithServiceURL";
+            string serviceURL = "https://mws.amazonservices.com";
 
             // Create a configuration object
             MWSMerchantFulfillmentServiceConfig config = new MWSMerchantFulfillmentServiceConfig();
@@ -65,8 +65,8 @@ namespace MWSMerchantFulfillmentService {
             {
                 IMWSResponse response = null;
                 // response = sample.InvokeCancelShipment();
-                // response = sample.InvokeCreateShipment();
-                // response = sample.InvokeGetEligibleShippingServices();
+                 //response = sample.InvokeCreateShipment();
+                 response = sample.InvokeGetEligibleShippingServices();
                 // response = sample.InvokeGetShipment();
                 // response = sample.InvokeGetServiceStatus();
                 Console.WriteLine("Response:");
@@ -91,7 +91,7 @@ namespace MWSMerchantFulfillmentService {
                 Console.WriteLine("StatusCode: " + ex.StatusCode);
                 Console.WriteLine("ErrorCode: " + ex.ErrorCode);
                 Console.WriteLine("ErrorType: " + ex.ErrorType);
-                throw ex;
+                
             }
         }
 
@@ -102,18 +102,18 @@ namespace MWSMerchantFulfillmentService {
             this.client = client;
         }
 
-        public CancelShipmentResponse InvokeCancelShipment()
-        {
-            // Create a request.
-            CancelShipmentRequest request = new CancelShipmentRequest();
-            string sellerId = "example";
-            request.SellerId = sellerId;
-            string mwsAuthToken = "example";
-            request.MWSAuthToken = mwsAuthToken;
-            string shipmentId = "example";
-            request.ShipmentId = shipmentId;
-            return this.client.CancelShipment(request);
-        }
+        //public CancelShipmentResponse InvokeCancelShipment()
+        //{
+        //    // Create a request.
+        //    CancelShipmentRequest request = new CancelShipmentRequest();
+        //    string sellerId = "example";
+        //    request.SellerId = sellerId;
+        //    string mwsAuthToken = "example";
+        //    request.MWSAuthToken = mwsAuthToken;
+        //    string shipmentId = "example";
+        //    request.ShipmentId = shipmentId;
+        //    return this.client.CancelShipment(request);
+        //}
 
         public CreateShipmentResponse InvokeCreateShipment()
         {
@@ -138,7 +138,7 @@ namespace MWSMerchantFulfillmentService {
         {
             // Create a request.
             GetEligibleShippingServicesRequest request = new GetEligibleShippingServicesRequest();
-            string sellerId = "example";
+            string sellerId = "A1EDR7O0GKJKM5";
             request.SellerId = sellerId;
             string mwsAuthToken = "example";
             request.MWSAuthToken = mwsAuthToken;
@@ -147,29 +147,29 @@ namespace MWSMerchantFulfillmentService {
             return this.client.GetEligibleShippingServices(request);
         }
 
-        public GetShipmentResponse InvokeGetShipment()
-        {
-            // Create a request.
-            GetShipmentRequest request = new GetShipmentRequest();
-            string sellerId = "example";
-            request.SellerId = sellerId;
-            string mwsAuthToken = "example";
-            request.MWSAuthToken = mwsAuthToken;
-            string shipmentId = "example";
-            request.ShipmentId = shipmentId;
-            return this.client.GetShipment(request);
-        }
+        //public GetShipmentResponse InvokeGetShipment()
+        //{
+        //    // Create a request.
+        //    GetShipmentRequest request = new GetShipmentRequest();
+        //    string sellerId = "example";
+        //    request.SellerId = sellerId;
+        //    string mwsAuthToken = "example";
+        //    request.MWSAuthToken = mwsAuthToken;
+        //    string shipmentId = "example";
+        //    request.ShipmentId = shipmentId;
+        //    return this.client.GetShipment(request);
+        //}
 
-        public GetServiceStatusResponse InvokeGetServiceStatus()
-        {
-            // Create a request.
-            GetServiceStatusRequest request = new GetServiceStatusRequest();
-            string sellerId = "example";
-            request.SellerId = sellerId;
-            string mwsAuthToken = "example";
-            request.MWSAuthToken = mwsAuthToken;
-            return this.client.GetServiceStatus(request);
-        }
+        //public GetServiceStatusResponse InvokeGetServiceStatus()
+        //{
+        //    // Create a request.
+        //    GetServiceStatusRequest request = new GetServiceStatusRequest();
+        //    string sellerId = "example";
+        //    request.SellerId = sellerId;
+        //    string mwsAuthToken = "example";
+        //    request.MWSAuthToken = mwsAuthToken;
+        //    return this.client.GetServiceStatus(request);
+        //}
 
 
     }

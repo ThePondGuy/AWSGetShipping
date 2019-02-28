@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MWSClientCsRuntime-1.0">
-      <HintPath>C:\Users\twils\Downloads\MWSMerchantFulfillmentCSharpClientLibrary-2015-06-01._CB480787427_\dist\MWSClientCsRuntime-1.0.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\MWSMerchantFulfillmentCSharpClientLibrary-2015-06-01._CB480787427_\dist\MWSClientCsRuntime-1.0.dll</HintPath>
     </Reference>
     <Reference Include="MWSMerchantFulfillment_2015-06-01_v2018-10-31">
-      <HintPath>C:\Users\twils\Downloads\MWSMerchantFulfillmentCSharpClientLibrary-2015-06-01._CB480787427_\dist\MWSMerchantFulfillment_2015-06-01_v2018-10-31.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\MWSMerchantFulfillmentCSharpClientLibrary-2015-06-01._CB480787427_\dist\MWSMerchantFulfillment_2015-06-01_v2018-10-31.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
